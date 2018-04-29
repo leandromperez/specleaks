@@ -1,0 +1,15 @@
+use_frameworks!
+
+target 'SpecLeaks_Example' do
+  pod 'SpecLeaks', :path => '../'
+
+
+  target 'SpecLeaks_Tests' do
+    inherit! :search_paths
+    pod 'SpecLeaks', :path => '../'
+    pod 'RxSwift'
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0.2'
+    pod 'RxCocoa'
+  end
+end
