@@ -80,7 +80,7 @@ class ViewControllersTests: QuickSpec {
                         return vc.createLeakInBlock()
                     }
 
-                    expect(test).toNot(leakWhen(action))
+                    expect(test).toNot(leakWhen(action)) //This test is intended to fail, since the action leaks
                 }
             }
             describe("dontCreateLeakInBlock") {
