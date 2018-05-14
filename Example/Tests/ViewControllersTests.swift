@@ -14,9 +14,13 @@ import Quick
 class ViewControllersTests: QuickSpec {
     
     override func spec() {
-        describe("UIViewController"){
+        describe("UI/NS ViewController"){
             let test = LeakTest{
-                return UIViewController()
+                #if os(iOS) || os(watchOS) || os(tvOS)
+                    return UIViewController()
+                #elseif os(OSX)
+                    return NSViewController()
+                #endif
             }
 
             describe("init") {
@@ -28,8 +32,14 @@ class ViewControllersTests: QuickSpec {
 
         describe("LeakingViewController") {
             let test = LeakTest{
+                #if os(iOS) || os(watchOS) || os(tvOS)
                 let storyboard = UIStoryboard.init(name: "LeakingViewController", bundle: Bundle(for: LeakingViewController.self))
                 return storyboard.instantiateInitialViewController() as! LeakingViewController
+                #elseif os(OSX)
+                    let storyboard = NSStoryboard.init(name: NSStoryboard.Name("LeakingViewController"), bundle: nil)
+                    return storyboard.instantiateInitialController() as! LeakingViewController
+                #endif
+                
             }
             
             describe("init") {

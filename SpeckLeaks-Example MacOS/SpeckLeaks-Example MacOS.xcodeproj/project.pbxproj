@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03198A6B14262CC92FE57D9C /* Pods_SpeckLeaks_Example_MacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2219DB99AE30984071575A1B /* Pods_SpeckLeaks_Example_MacOSTests.framework */; };
+		4E22511B20A98C6A00C62CD7 /* ActionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22511520A98C6A00C62CD7 /* ActionsTest.swift */; };
+		4E22511C20A98C6A00C62CD7 /* DelegatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22511620A98C6A00C62CD7 /* DelegatesTests.swift */; };
+		4E22511F20A98C6A00C62CD7 /* NotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22511920A98C6A00C62CD7 /* NotificationsTests.swift */; };
+		4E22512020A98C6A00C62CD7 /* ViewControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22511A20A98C6A00C62CD7 /* ViewControllersTests.swift */; };
+		4E73CDF520A988080009E2AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E73CDF420A988080009E2AF /* AppDelegate.swift */; };
+		4E73CDF720A988080009E2AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E73CDF620A988080009E2AF /* ViewController.swift */; };
+		4E73CDF920A988080009E2AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E73CDF820A988080009E2AF /* Assets.xcassets */; };
+		4E73CDFC20A988080009E2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E73CDFA20A988080009E2AF /* Main.storyboard */; };
+		4E73CE0820A988080009E2AF /* SpeckLeaks_Example_MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E73CE0720A988080009E2AF /* SpeckLeaks_Example_MacOSTests.swift */; };
+		4E73CE2120A98C380009E2AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E73CE2020A98C380009E2AF /* Info.plist */; };
+		4EB287D820A98D0000EE003C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB287D720A98D0000EE003C /* Helper.swift */; };
+		4EB287DB20A98E0A00EE003C /* LeakingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB287DA20A98E0A00EE003C /* LeakingViewController.storyboard */; };
+		4EB287DD20A98E3700EE003C /* LeakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB287DC20A98E3700EE003C /* LeakingViewController.swift */; };
+		4EB287DE20A991E100EE003C /* LeakingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB287DA20A98E0A00EE003C /* LeakingViewController.storyboard */; };
+		8B2E1EF4F6045495BFD12004 /* Pods_SpeckLeaks_Example_MacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9B36CE2E0FFBB5B4F90EAD /* Pods_SpeckLeaks_Example_MacOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E73CE0420A988080009E2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E73CDE920A988080009E2AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E73CDF020A988080009E2AF;
+			remoteInfo = "SpeckLeaks-Example MacOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D9B36CE2E0FFBB5B4F90EAD /* Pods_SpeckLeaks_Example_MacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeckLeaks_Example_MacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2219DB99AE30984071575A1B /* Pods_SpeckLeaks_Example_MacOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeckLeaks_Example_MacOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E22511520A98C6A00C62CD7 /* ActionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionsTest.swift; path = ../../Example/Tests/ActionsTest.swift; sourceTree = "<group>"; };
+		4E22511620A98C6A00C62CD7 /* DelegatesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DelegatesTests.swift; path = ../../Example/Tests/DelegatesTests.swift; sourceTree = "<group>"; };
+		4E22511920A98C6A00C62CD7 /* NotificationsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsTests.swift; path = ../../Example/Tests/NotificationsTests.swift; sourceTree = "<group>"; };
+		4E22511A20A98C6A00C62CD7 /* ViewControllersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllersTests.swift; path = ../../Example/Tests/ViewControllersTests.swift; sourceTree = "<group>"; };
+		4E73CDF120A988080009E2AF /* SpeckLeaks-Example MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpeckLeaks-Example MacOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E73CDF420A988080009E2AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E73CDF620A988080009E2AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E73CDF820A988080009E2AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E73CDFB20A988080009E2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E73CDFD20A988080009E2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E73CDFE20A988080009E2AF /* SpeckLeaks_Example_MacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpeckLeaks_Example_MacOS.entitlements; sourceTree = "<group>"; };
+		4E73CE0320A988080009E2AF /* SpeckLeaks-Example MacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpeckLeaks-Example MacOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E73CE0720A988080009E2AF /* SpeckLeaks_Example_MacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeckLeaks_Example_MacOSTests.swift; sourceTree = "<group>"; };
+		4E73CE2020A98C380009E2AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB287D720A98D0000EE003C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		4EB287DA20A98E0A00EE003C /* LeakingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeakingViewController.storyboard; sourceTree = "<group>"; };
+		4EB287DC20A98E3700EE003C /* LeakingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeakingViewController.swift; sourceTree = "<group>"; };
+		64759B88501E293DC4D52122 /* Pods-SpeckLeaks-Example MacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeckLeaks-Example MacOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeckLeaks-Example MacOS/Pods-SpeckLeaks-Example MacOS.release.xcconfig"; sourceTree = "<group>"; };
+		88EFD4836E64FA5236FAEABA /* Pods-SpeckLeaks-Example MacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeckLeaks-Example MacOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeckLeaks-Example MacOSTests/Pods-SpeckLeaks-Example MacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BD847DC89254437CB152687 /* Pods-SpeckLeaks-Example MacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeckLeaks-Example MacOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeckLeaks-Example MacOS/Pods-SpeckLeaks-Example MacOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CFEBE7F4ABC4836C7878F7C1 /* Pods-SpeckLeaks-Example MacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeckLeaks-Example MacOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeckLeaks-Example MacOSTests/Pods-SpeckLeaks-Example MacOSTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E73CDEE20A988080009E2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2E1EF4F6045495BFD12004 /* Pods_SpeckLeaks_Example_MacOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E73CE0020A988080009E2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03198A6B14262CC92FE57D9C /* Pods_SpeckLeaks_Example_MacOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E73CDE820A988080009E2AF = {
+			isa = PBXGroup;
+			children = (
+				4E73CDF320A988080009E2AF /* SpeckLeaks-Example MacOS */,
+				4E73CE0620A988080009E2AF /* SpeckLeaks-Example MacOSTests */,
+				4E73CDF220A988080009E2AF /* Products */,
+				65EE6ED15E01F6F266A36D2B /* Pods */,
+				E495FC89DCCA50FA7C3242DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E73CDF220A988080009E2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E73CDF120A988080009E2AF /* SpeckLeaks-Example MacOS.app */,
+				4E73CE0320A988080009E2AF /* SpeckLeaks-Example MacOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E73CDF320A988080009E2AF /* SpeckLeaks-Example MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E73CDF420A988080009E2AF /* AppDelegate.swift */,
+				4E73CDF620A988080009E2AF /* ViewController.swift */,
+				4E73CDF820A988080009E2AF /* Assets.xcassets */,
+				4E73CDFA20A988080009E2AF /* Main.storyboard */,
+				4E73CDFD20A988080009E2AF /* Info.plist */,
+				4E73CDFE20A988080009E2AF /* SpeckLeaks_Example_MacOS.entitlements */,
+			);
+			path = "SpeckLeaks-Example MacOS";
+			sourceTree = "<group>";
+		};
+		4E73CE0620A988080009E2AF /* SpeckLeaks-Example MacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EB287D920A98DD400EE003C /* Helper */,
+				4E73CE2020A98C380009E2AF /* Info.plist */,
+				4E22511520A98C6A00C62CD7 /* ActionsTest.swift */,
+				4E22511620A98C6A00C62CD7 /* DelegatesTests.swift */,
+				4E22511920A98C6A00C62CD7 /* NotificationsTests.swift */,
+				4E22511A20A98C6A00C62CD7 /* ViewControllersTests.swift */,
+				4E73CE0720A988080009E2AF /* SpeckLeaks_Example_MacOSTests.swift */,
+			);
+			path = "SpeckLeaks-Example MacOSTests";
+			sourceTree = "<group>";
+		};
+		4EB287D920A98DD400EE003C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4EB287D720A98D0000EE003C /* Helper.swift */,
+				4EB287DA20A98E0A00EE003C /* LeakingViewController.storyboard */,
+				4EB287DC20A98E3700EE003C /* LeakingViewController.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		65EE6ED15E01F6F266A36D2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BD847DC89254437CB152687 /* Pods-SpeckLeaks-Example MacOS.debug.xcconfig */,
+				64759B88501E293DC4D52122 /* Pods-SpeckLeaks-Example MacOS.release.xcconfig */,
+				88EFD4836E64FA5236FAEABA /* Pods-SpeckLeaks-Example MacOSTests.debug.xcconfig */,
+				CFEBE7F4ABC4836C7878F7C1 /* Pods-SpeckLeaks-Example MacOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E495FC89DCCA50FA7C3242DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D9B36CE2E0FFBB5B4F90EAD /* Pods_SpeckLeaks_Example_MacOS.framework */,
+				2219DB99AE30984071575A1B /* Pods_SpeckLeaks_Example_MacOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E73CDF020A988080009E2AF /* SpeckLeaks-Example MacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E73CE0C20A988080009E2AF /* Build configuration list for PBXNativeTarget "SpeckLeaks-Example MacOS" */;
+			buildPhases = (
+				BCD7F5124582B3A3A9824A90 /* [CP] Check Pods Manifest.lock */,
+				4E73CDED20A988080009E2AF /* Sources */,
+				4E73CDEE20A988080009E2AF /* Frameworks */,
+				4E73CDEF20A988080009E2AF /* Resources */,
+				F48E814FCF42D073B02DE68C /* [CP] Embed Pods Frameworks */,
+				6AE6FF8AE8A3E61689B98DA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpeckLeaks-Example MacOS";
+			productName = "SpeckLeaks-Example MacOS";
+			productReference = 4E73CDF120A988080009E2AF /* SpeckLeaks-Example MacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E73CE0220A988080009E2AF /* SpeckLeaks-Example MacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E73CE0F20A988080009E2AF /* Build configuration list for PBXNativeTarget "SpeckLeaks-Example MacOSTests" */;
+			buildPhases = (
+				583F17154C123607270D3E25 /* [CP] Check Pods Manifest.lock */,
+				4E73CDFF20A988080009E2AF /* Sources */,
+				4E73CE0020A988080009E2AF /* Frameworks */,
+				4E73CE0120A988080009E2AF /* Resources */,
+				80C991632D96D03B96569682 /* [CP] Embed Pods Frameworks */,
+				586DA67231A6E0EB3FFFBF3B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E73CE0520A988080009E2AF /* PBXTargetDependency */,
+			);
+			name = "SpeckLeaks-Example MacOSTests";
+			productName = "SpeckLeaks-Example MacOSTests";
+			productReference = 4E73CE0320A988080009E2AF /* SpeckLeaks-Example MacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E73CDE920A988080009E2AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					4E73CDF020A988080009E2AF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4E73CE0220A988080009E2AF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4E73CDF020A988080009E2AF;
+					};
+				};
+			};
+			buildConfigurationList = 4E73CDEC20A988080009E2AF /* Build configuration list for PBXProject "SpeckLeaks-Example MacOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E73CDE820A988080009E2AF;
+			productRefGroup = 4E73CDF220A988080009E2AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E73CDF020A988080009E2AF /* SpeckLeaks-Example MacOS */,
+				4E73CE0220A988080009E2AF /* SpeckLeaks-Example MacOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E73CDEF20A988080009E2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB287DE20A991E100EE003C /* LeakingViewController.storyboard in Resources */,
+				4E73CDF920A988080009E2AF /* Assets.xcassets in Resources */,
+				4E73CDFC20A988080009E2AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E73CE0120A988080009E2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E73CE2120A98C380009E2AF /* Info.plist in Resources */,
+				4EB287DB20A98E0A00EE003C /* LeakingViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		583F17154C123607270D3E25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeckLeaks-Example MacOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		586DA67231A6E0EB3FFFBF3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeckLeaks-Example MacOSTests/Pods-SpeckLeaks-Example MacOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AE6FF8AE8A3E61689B98DA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeckLeaks-Example MacOS/Pods-SpeckLeaks-Example MacOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80C991632D96D03B96569682 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpeckLeaks-Example MacOSTests/Pods-SpeckLeaks-Example MacOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/SpecLeaks/SpecLeaks.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpecLeaks.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeckLeaks-Example MacOSTests/Pods-SpeckLeaks-Example MacOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD7F5124582B3A3A9824A90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeckLeaks-Example MacOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F48E814FCF42D073B02DE68C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpeckLeaks-Example MacOS/Pods-SpeckLeaks-Example MacOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/SpecLeaks/SpecLeaks.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpecLeaks.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeckLeaks-Example MacOS/Pods-SpeckLeaks-Example MacOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E73CDED20A988080009E2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E73CDF720A988080009E2AF /* ViewController.swift in Sources */,
+				4E73CDF520A988080009E2AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E73CDFF20A988080009E2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E22511F20A98C6A00C62CD7 /* NotificationsTests.swift in Sources */,
+				4E73CE0820A988080009E2AF /* SpeckLeaks_Example_MacOSTests.swift in Sources */,
+				4E22511B20A98C6A00C62CD7 /* ActionsTest.swift in Sources */,
+				4E22511C20A98C6A00C62CD7 /* DelegatesTests.swift in Sources */,
+				4EB287DD20A98E3700EE003C /* LeakingViewController.swift in Sources */,
+				4E22512020A98C6A00C62CD7 /* ViewControllersTests.swift in Sources */,
+				4EB287D820A98D0000EE003C /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E73CE0520A988080009E2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E73CDF020A988080009E2AF /* SpeckLeaks-Example MacOS */;
+			targetProxy = 4E73CE0420A988080009E2AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E73CDFA20A988080009E2AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E73CDFB20A988080009E2AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E73CE0A20A988080009E2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E73CE0B20A988080009E2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		4E73CE0D20A988080009E2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BD847DC89254437CB152687 /* Pods-SpeckLeaks-Example MacOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SpeckLeaks-Example MacOS/SpeckLeaks_Example_MacOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2GG7484WQZ;
+				INFOPLIST_FILE = "SpeckLeaks-Example MacOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SpeckLeaks-Example-MacOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		4E73CE0E20A988080009E2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64759B88501E293DC4D52122 /* Pods-SpeckLeaks-Example MacOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SpeckLeaks-Example MacOS/SpeckLeaks_Example_MacOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2GG7484WQZ;
+				INFOPLIST_FILE = "SpeckLeaks-Example MacOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SpeckLeaks-Example-MacOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		4E73CE1020A988080009E2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88EFD4836E64FA5236FAEABA /* Pods-SpeckLeaks-Example MacOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2GG7484WQZ;
+				INFOPLIST_FILE = "SpeckLeaks-Example MacOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SpeckLeaks-Example-MacOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeckLeaks-Example MacOS.app/Contents/MacOS/SpeckLeaks-Example MacOS";
+			};
+			name = Debug;
+		};
+		4E73CE1120A988080009E2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFEBE7F4ABC4836C7878F7C1 /* Pods-SpeckLeaks-Example MacOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2GG7484WQZ;
+				INFOPLIST_FILE = "SpeckLeaks-Example MacOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SpeckLeaks-Example-MacOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeckLeaks-Example MacOS.app/Contents/MacOS/SpeckLeaks-Example MacOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E73CDEC20A988080009E2AF /* Build configuration list for PBXProject "SpeckLeaks-Example MacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E73CE0A20A988080009E2AF /* Debug */,
+				4E73CE0B20A988080009E2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E73CE0C20A988080009E2AF /* Build configuration list for PBXNativeTarget "SpeckLeaks-Example MacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E73CE0D20A988080009E2AF /* Debug */,
+				4E73CE0E20A988080009E2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E73CE0F20A988080009E2AF /* Build configuration list for PBXNativeTarget "SpeckLeaks-Example MacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E73CE1020A988080009E2AF /* Debug */,
+				4E73CE1120A988080009E2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E73CDE920A988080009E2AF /* Project object */;
+}

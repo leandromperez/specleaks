@@ -1,0 +1,15 @@
+platform :osx, '10.11'
+use_frameworks!
+
+target 'SpeckLeaks-Example MacOS' do
+  pod 'SpecLeaks', :path => '../'
+
+  target 'SpeckLeaks-Example MacOSTests' do
+    inherit! :search_paths
+    pod 'SpecLeaks', :path => '../'
+    pod 'RxSwift'
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0.2'
+    pod 'RxCocoa'
+  end
+end

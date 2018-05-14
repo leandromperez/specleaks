@@ -7,7 +7,10 @@
 //
 
 import Foundation
-import UIKit
+#if os(iOS) || os(watchOS) || os(tvOS)
+    import UIKit
+#elseif os(OSX)
+#endif
 import Quick
 import Nimble
 
@@ -23,9 +26,17 @@ struct AnalyzeLeakAction{
             
             //Instantiate the object that will be analyzed
             mayBeLeaking = constructor()
-            if let vc = mayBeLeaking as? UIViewController{
-                _ = vc.view //TO call viewDidLoad on the vc
-            }
+            
+            #if os(iOS) || os(watchOS) || os(tvOS)
+                if let vc = mayBeLeaking as? UIViewController{
+                    _ = vc.view //TO call viewDidLoad on the vc
+                }
+            #elseif os(OSX)
+                if let vc = mayBeLeaking as? NSViewController{
+                    _ = vc.view //TO call viewDidLoad on the vc
+                }
+            #endif
+            
             leaksAnalyzer.analize(mayBeLeaking!)
             
             //Run the action that will be analyzed
@@ -58,9 +69,17 @@ struct AnalyzeLeakAction{
             
             //Instantiate the object that will be analyzed
             mayBeLeaking = constructor()
+            
+            #if os(iOS) || os(watchOS) || os(tvOS)
             if let vc = mayBeLeaking as? UIViewController{
                 _ = vc.view //TO call viewDidLoad on the vc
             }
+            #elseif os(OSX)
+                if let vc = mayBeLeaking as? NSViewController{
+                    _ = vc.view //TO call viewDidLoad on the vc
+                }
+            #endif
+            
             leaksAnalyzer.analize(mayBeLeaking!)
             
             //Run the action that will be analyzed
