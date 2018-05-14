@@ -8,7 +8,7 @@
 import Quick
 import Nimble
 
-public typealias LeakTestConstructor = () -> AnyObject
+//public typealias LeakTestConstructor = () -> AnyObject
 
 public struct LeakTest{
     let constructor : LeakTestConstructor
