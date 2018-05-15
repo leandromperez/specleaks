@@ -24,12 +24,8 @@ public struct LeakTest{
             
             var evaluated : AnyObject? = self.constructor()
             
-            #if os(iOS) || os(watchOS) || os(tvOS)
-                if let vc = evaluated as? UIViewController{
-                    _ = vc.view //To call viewDidLoad on the vc
-                }
-            #elseif os(OSX)
-            #endif
+            //To call viewDidLoad on the vc
+            view(evaluated)
                 
             leaked = evaluated
             evaluated = nil
@@ -54,13 +50,8 @@ public struct LeakTest{
             else{
                 actionResult = action(evaluated!)
                 
-                #if os(iOS) || os(watchOS) || os(tvOS)
-                if let vc = evaluated as? UIViewController{
-                    _ = vc.view //To call viewDidLoad on the vc
-                    vc.view = nil
-                }
-                #elseif os(OSX)
-                #endif
+                //To call viewDidLoad on the vc
+                view(evaluated)
                 
                 leaked = evaluated
                 evaluated = nil

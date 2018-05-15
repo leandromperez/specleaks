@@ -7,12 +7,28 @@
 //
 
 import Foundation
+
 #if os(iOS) || os(watchOS) || os(tvOS)
     import UIKit
-#elseif os(OSX)
+    public typealias OSViewController = UIViewController
+#elseif os(macOS)
+    import Cocoa
+    public typealias OSViewController = NSViewController
 #endif
+
 import Quick
 import Nimble
+
+
+func view(_ vc: AnyObject?) {
+    if let vc = vc as? OSViewController {
+        _ = vc.view //To call viewDidLoad on the vc
+    }
+}
+
+public func getOSViewController() -> OSViewController {
+    return OSViewController()
+}
 
 struct AnalyzeLeak{
     func execute( constructor: LeakTestConstructor, shouldLeak: Bool = false ){
@@ -24,15 +40,8 @@ struct AnalyzeLeak{
             leaksAnalyzer.leakedObject = nil
             
             mayBeLeaking = constructor()
-            #if os(iOS) || os(watchOS) || os(tvOS)
-                if let vc = mayBeLeaking as? UIViewController{
-                    _ = vc.view //To call viewDidLoad on the vc
-                }
-            #elseif os(OSX)
-                if let vc = mayBeLeaking as? NSViewController{
-                    _ = vc.view //To call viewDidLoad on the vc
-                }
-            #endif
+            
+            view(mayBeLeaking)
             
             leaksAnalyzer.analize(mayBeLeaking!)
             mayBeLeaking = nil
