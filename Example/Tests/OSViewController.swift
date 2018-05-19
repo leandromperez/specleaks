@@ -9,14 +9,13 @@
 import Foundation
 
 #if os(iOS) || os(watchOS) || os(tvOS)
+
 import UIKit
 public typealias OSViewController = UIViewController
 public typealias OSStoryboard = UIStoryboard
 
-func makeStoryboard(named: String, bundle: Bundle) -> OSStoryboard {
-}
-
 #elseif os(macOS)
+
 import Cocoa
 public typealias OSViewController = NSViewController
 public typealias OSStoryboard = NSStoryboard
@@ -39,7 +38,7 @@ func makeStoryboard(named: String, bundle: Bundle) -> OSStoryboard {
 
     #if os(iOS) || os(watchOS) || os(tvOS)
 
-    return UIUStoryboard.init(name: named, bundle: bundle)
+    return UIStoryboard.init(name: named, bundle: bundle)
 
     #elseif os(macOS)
 
