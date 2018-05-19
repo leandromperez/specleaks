@@ -6,56 +6,54 @@
 //  Copyright © 2018 Leandro Perez. All rights reserved.
 //
 
-import UIKit
 import RxSwift
 
-class LeakingViewController: UIViewController {
-    
-    private var anyObject : AnyObject? = nil
-    
+class LeakingViewController: OSViewController {
+
+    private var anyObject: AnyObject?
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    func cleanLeakedObjects(){
-    
+
+    func cleanLeakedObjects() {
+
         self.anyObject = nil
     }
-    
-    func createLeak(){
+
+    func createLeak() {
         self.anyObject = self
     }
-    
-    func doSomething(){
+
+    func doSomething() {
         print("doing something")
     }
-    
-    func createLeakInBlock() -> () -> (){
+
+    func createLeakInBlock() -> () -> Void {
         return {
             self.doSomething()
         }
     }
-    
-    func dontCreateLeakInBlock() -> () -> (){
+
+    func dontCreateLeakInBlock() -> () -> Void {
         return { [weak self] in
             self?.doSomething()
         }
     }
-    
-    func createLeakInFlatMap() -> Observable<String>{
+
+    func createLeakInFlatMap() -> Observable<String> {
         return Observable.just("hello")
-            .flatMap { (hello) -> Observable<String> in
+            .flatMap { (_) -> Observable<String> in
                 self.doSomething()
                 return .just("goodbye and leak")
         }
     }
-    
-    func dontCreateLeakInFlatMap() -> Observable<String>{
+
+    func dontCreateLeakInFlatMap() -> Observable<String> {
         return Observable.just("hello")
-            .flatMap { [unowned self] (hello) -> Observable<String> in
+            .flatMap { [unowned self] (_) -> Observable<String> in
                 self.doSomething()
                 return .just("goodbye")
         }
     }
 }
-

@@ -1,16 +1,34 @@
-platform :ios, '8.0'
-use_frameworks!
+
 
 target 'SpecLeaks_Example' do
-  pod 'SpecLeaks', :path => '../'
+    platform :ios, '8.0'
+    use_frameworks!
 
-
-  target 'SpecLeaks_Tests' do
-    inherit! :search_paths
     pod 'SpecLeaks', :path => '../'
+
+    target 'SpecLeaks_Tests' do
+        inherit! :search_paths
+        pod 'SpecLeaks', :path => '../'
+        pod 'RxCocoa'
+        pod 'RxSwift'
+        pod 'Quick', '~> 1.2.0'
+        pod 'Nimble', '~> 7.0.2'
+        pod 'SwiftLint'
+    end
+end
+
+
+target 'Tests MacOS' do
+    platform :osx, '10.11'
+    use_frameworks!
+
+    pod 'SpecLeaks', :path => '../'
+
+    inherit! :search_paths
+    pod 'RxCocoa'
     pod 'RxSwift'
     pod 'Quick', '~> 1.2.0'
     pod 'Nimble', '~> 7.0.2'
-    pod 'RxCocoa'
-  end
+    pod 'SwiftLint'
 end
+

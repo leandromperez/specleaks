@@ -14,16 +14,16 @@ import RxCocoa
 
 @testable import SpecLeaks
 
-//MARK: - Not Leaking
-class NotLeakingWithAppNotification{
+// MARK: - Not Leaking
+class NotLeakingWithAppNotification {
     private var disposeBag = DisposeBag()
-    
-    var s : Int = 5
-    
-    func doSomething(){
+
+    var s: Int = 5
+
+    func doSomething() {
         s = Int(arc4random())
     }
-    
+
     init() {
         NotificationCenter.default.rx
             .notification(Notification.Name.init("Some notification"))
@@ -35,16 +35,16 @@ class NotLeakingWithAppNotification{
     }
 }
 
-//MARK: - Leaking
-class LeakingWithAppNotification{
+// MARK: - Leaking
+class LeakingWithAppNotification {
     private var disposeBag = DisposeBag()
-    
-    var s : Int = 5
-    
-    func doSomething(){
+
+    var s: Int = 5
+
+    func doSomething() {
         s = Int(arc4random())
     }
-    
+
     init() {
         NotificationCenter.default.rx
             .notification(Notification.Name.init("Some notification"))
@@ -57,26 +57,26 @@ class LeakingWithAppNotification{
 }
 
 class NotificationsTests: QuickSpec {
-    
+
     override func spec() {
         describe("an NotLeakingWithAppNotification") {
-           
-            it("must not leak"){
-                let listeningAppNotification = LeakTest{
+
+            it("must not leak") {
+                let listeningAppNotification = LeakTest {
                     return NotLeakingWithAppNotification()
                 }
-                
+
                 expect(listeningAppNotification).toNot(leak())
             }
         }
-        
+
         describe("a LeakWithAppNotification") {
-            
-            it("must leak"){
-                let leaker = LeakTest{
+
+            it("must leak") {
+                let leaker = LeakTest {
                     return LeakingWithAppNotification()
                 }
-                
+
                 expect(leaker).to(leak())
             }
         }
