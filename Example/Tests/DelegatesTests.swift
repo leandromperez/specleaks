@@ -10,15 +10,15 @@ import Nimble
 import Quick
 import SpecLeaks
 
-//MARK: - Leaking
-protocol ServerDelegate : AnyObject{}
+// MARK: - Leaking
+protocol ServerDelegate: AnyObject {}
 
-class LeakingServer{
-    var delegate : ServerDelegate? = nil
+class LeakingServer {
+    var delegate: ServerDelegate?
 }
 
-class LeakingClient : ServerDelegate{
-    var server : LeakingServer
+class LeakingClient: ServerDelegate {
+    var server: LeakingServer
 
     init(server: LeakingServer) {
         self.server = server
@@ -26,13 +26,13 @@ class LeakingClient : ServerDelegate{
     }
 }
 
-//MARK: - Not Leaking
-class NotLeakingServer{
-    weak var delegate : ServerDelegate? = nil
+// MARK: - Not Leaking
+class NotLeakingServer {
+    weak var delegate: ServerDelegate?
 }
 
-class NotLeakingClient : ServerDelegate{
-    var server : NotLeakingServer
+class NotLeakingClient: ServerDelegate {
+    var server: NotLeakingServer
 
     init(server: NotLeakingServer) {
         self.server = server
@@ -40,8 +40,8 @@ class NotLeakingClient : ServerDelegate{
     }
 }
 
-class SomeObject{
-    func doSomething(){
+class SomeObject {
+    func doSomething() {
 
     }
 }
@@ -50,13 +50,13 @@ class SomeOjectTests: QuickSpec {
     override func spec() {
         describe("a SomeObject") {
             describe("init") {
-                it("must not leak"){
+                it("must not leak") {
 
-                    let someObject = LeakTest{
+                    let someObject = LeakTest {
                         return SomeObject()
                     }
 
-                    let doSomethingIsCalled : (SomeObject) -> ()  = {obj in obj.doSomething()}
+                    let doSomethingIsCalled: (SomeObject) -> Void  = {obj in obj.doSomething()}
 
                     expect(someObject).toNot(leakWhen(doSomethingIsCalled))
                 }
@@ -65,16 +65,14 @@ class SomeOjectTests: QuickSpec {
     }
 }
 
-
-
 class DelegatesTests: QuickSpec {
 
     override func spec() {
         describe("a NotLeakingClient") {
 
-            it("must not leak"){
+            it("must not leak") {
 
-                let test = LeakTest{
+                let test = LeakTest {
                     return NotLeakingClient(server: NotLeakingServer())
                 }
 
@@ -84,18 +82,18 @@ class DelegatesTests: QuickSpec {
 
         describe("a LeakingClient") {
 
-            it("must leak"){
+            it("must leak") {
 
-                let test = LeakTest{
+                let test = LeakTest {
                     return LeakingClient(server: LeakingServer())
                 }
 
                 expect(test).to(leak())
             }
 
-            it("must not leak"){
+            it("must not leak") {
 
-                let test = LeakTest{
+                let test = LeakTest {
                     return LeakingClient(server: LeakingServer())
                 }
 
@@ -104,4 +102,3 @@ class DelegatesTests: QuickSpec {
         }
     }
 }
-

@@ -12,35 +12,41 @@ import Quick
 @testable import SpecLeaks
 
 class ViewControllersTests: QuickSpec {
-    
+
     override func spec() {
-        describe("UIViewController"){
-            let test = LeakTest{
-                return UIViewController()
+        describe("UI/NS ViewController") {
+            let test = LeakTest {
+                return getOSViewController()
             }
 
             describe("init") {
-                it("must not leak"){
+                it("must not leak") {
                     expect(test).toNot(leak())
                 }
             }
         }
 
         describe("LeakingViewController") {
-            let test = LeakTest{
+            let test = LeakTest {
+                #if os(iOS) || os(watchOS) || os(tvOS)
                 let storyboard = UIStoryboard.init(name: "LeakingViewController", bundle: Bundle(for: LeakingViewController.self))
                 return storyboard.instantiateInitialViewController() as! LeakingViewController
+                #elseif os(OSX)
+                    let storyboard = NSStoryboard.init(name: NSStoryboard.Name("LeakingViewController"), bundle: Bundle(for: LeakingViewController.self))
+                    return storyboard.instantiateInitialController() as! LeakingViewController
+                #endif
+
             }
-            
+
             describe("init") {
-                it("must not leak"){
+                it("must not leak") {
                     expect(test).toNot(leak())
                 }
             }
-            
+
             describe("doSomething") {
-                it("must not leak"){
-                    let action : (LeakingViewController) -> () = { vc in
+                it("must not leak") {
+                    let action: (LeakingViewController) -> Void = { vc in
 
                         vc.cleanLeakedObjects()
                         vc.doSomething()
@@ -49,10 +55,10 @@ class ViewControllersTests: QuickSpec {
                     expect(test).toNot(leakWhen(action))
                 }
             }
-            
+
             describe("createLeak") {
-                it("must leak"){
-                    let action : (LeakingViewController) -> () = { vc in
+                it("must leak") {
+                    let action: (LeakingViewController) -> Void = { vc in
 
                         vc.cleanLeakedObjects()
                         vc.createLeak()
@@ -63,8 +69,8 @@ class ViewControllersTests: QuickSpec {
             }
 
             describe("createLeakInBlock") {
-                it("must leak"){
-                    let action : (LeakingViewController) -> Any = { vc in
+                it("must leak") {
+                    let action: (LeakingViewController) -> Any = { vc in
 
                         vc.cleanLeakedObjects()
                         return vc.createLeakInBlock()
@@ -73,8 +79,8 @@ class ViewControllersTests: QuickSpec {
                     expect(test).to(leakWhen(action))
                 }
 
-                it("must NOT leak"){
-                    let action : (LeakingViewController) -> Any = { vc in
+                it("must NOT leak") {
+                    let action: (LeakingViewController) -> Any = { vc in
 
                         vc.cleanLeakedObjects()
                         return vc.createLeakInBlock()
@@ -84,20 +90,20 @@ class ViewControllersTests: QuickSpec {
                 }
             }
             describe("dontCreateLeakInBlock") {
-                it("must not leak"){
-                    let action : (LeakingViewController) -> Any = { vc in
-                        
+                it("must not leak") {
+                    let action: (LeakingViewController) -> Any = { vc in
+
                         vc.cleanLeakedObjects()
                         return vc.dontCreateLeakInBlock()
                     }
-                    
+
                     expect(test).toNot(leakWhen(action))
                 }
             }
 
             describe("createLeakInFlatMap") {
-                it("must leak"){
-                    let action : (LeakingViewController) -> Any = { vc in
+                it("must leak") {
+                    let action: (LeakingViewController) -> Any = { vc in
 
                         vc.cleanLeakedObjects()
                         return vc.createLeakInFlatMap()
@@ -106,21 +112,18 @@ class ViewControllersTests: QuickSpec {
                     expect(test).to(leakWhen(action))
                 }
             }
-            
+
             describe("dontCreateLeakInFlatMap") {
-                it("must not leak"){
-                    let action : (LeakingViewController) -> Any = { vc in
-                        
+                it("must not leak") {
+                    let action: (LeakingViewController) -> Any = { vc in
+
                         vc.cleanLeakedObjects()
                         return vc.dontCreateLeakInFlatMap()
                     }
-                    
+
                     expect(test).toNot(leakWhen(action))
                 }
             }
         }
     }
 }
-
-
-

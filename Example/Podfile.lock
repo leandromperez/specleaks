@@ -7,6 +7,7 @@ PODS:
   - SpecLeaks (0.1.0):
     - Nimble
     - Quick
+  - SwiftLint (0.25.1)
 
 DEPENDENCIES:
   - Nimble (~> 7.0.2)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - RxCocoa
   - RxSwift
   - SpecLeaks (from `../`)
+  - SwiftLint
 
 EXTERNAL SOURCES:
   SpecLeaks:
@@ -24,8 +26,9 @@ SPEC CHECKSUMS:
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
-  SpecLeaks: 7eb5267c920a3fb04adedec4348d5b8989cc28d8
+  SpecLeaks: 9a4b653f0e73fa5da2a0241ca7dd839197d87619
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
 
-PODFILE CHECKSUM: f9e14b295d106a6fc7b7596fec23693681fd2b75
+PODFILE CHECKSUM: e643a6ffcb4c1a2026c6e323951e94cd8b9c9f58
 
 COCOAPODS: 1.4.0

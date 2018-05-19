@@ -8,10 +8,10 @@
 
 import Foundation
 
-class LeaksAnalyzer{
-    weak var leakedObject : AnyObject? = nil
-    
-    func analize(_ leakingObject:AnyObject) {
+class LeaksAnalyzer {
+    weak var leakedObject: AnyObject?
+
+    func analize(_ leakingObject: AnyObject) {
         self.leakedObject = leakingObject
     }
 }

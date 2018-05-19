@@ -21,6 +21,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/leandromperez/specleaks.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.platform     	  = { :ios => "8.0", :osx => "10.11", :watchos => "2.0", :tvos => "9.0" }
+  s.osx.deployment_target = "10.11"
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SpecLeaks/Classes/**/*'
@@ -30,7 +32,9 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'XCTest'
+  s.ios.frameworks = 'UIKit'
+  s.osx.frameworks = 'AppKit'
+  s.frameworks = 'XCTest'
   s.dependency 'Quick'
   s.dependency 'Nimble'
 end

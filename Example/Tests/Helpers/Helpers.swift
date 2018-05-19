@@ -8,6 +8,6 @@
 
 import Foundation
 
-typealias ErrorHandler = (Error)->()
-typealias Action = () -> ()
-typealias Handler<T> = (T) -> ()
+typealias ErrorHandler = (Error) -> Void
+typealias Action = () -> Void
+typealias Handler<T> = (T) -> Void
