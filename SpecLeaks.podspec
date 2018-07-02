@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/leandromperez/specleaks'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'leandromperez@gmail.com' => 'leandromperez@gmail.com' }
+  s.author           = { 'Leandro Perez' => 'leandromperez@gmail.com' }
   s.source           = { :git => 'https://github.com/leandromperez/specleaks.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.11"
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SpecLeaks/Classes/**/*'
+  s.source_files = 'SpecLeaks/Classes/*.swift'
   
   # s.resource_bundles = {
   #   'SpecLeaks' => ['SpecLeaks/Assets/*.png']

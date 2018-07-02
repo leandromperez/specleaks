@@ -17,9 +17,17 @@ DEPENDENCIES:
   - SpecLeaks (from `../`)
   - SwiftLint
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+    - RxCocoa
+    - RxSwift
+    - SwiftLint
+
 EXTERNAL SOURCES:
   SpecLeaks:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
@@ -31,4 +39,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: e643a6ffcb4c1a2026c6e323951e94cd8b9c9f58
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
