@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpecLeaks'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.swift_version    = '4.0'
   s.summary          = 'Unit Tests Memory Leaks in Swift. Write readable tests for mem leaks easily with these Quick and Nimble extensions.'
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/leandromperez/specleaks'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'leandromperez@gmail.com' => 'leandromperez@gmail.com' }
+  s.author           = { 'Leandro Perez' => 'leandromperez@gmail.com' }
   s.source           = { :git => 'https://github.com/leandromperez/specleaks.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
