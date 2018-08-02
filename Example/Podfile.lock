@@ -15,17 +15,24 @@ DEPENDENCIES:
   - RxSwift
   - SpecLeaks (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+    - RxCocoa
+    - RxSwift
+
 EXTERNAL SOURCES:
   SpecLeaks:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
-  SpecLeaks: 7eb5267c920a3fb04adedec4348d5b8989cc28d8
+  SpecLeaks: 328ff98176210e301f6d49e5340b4c8ad2d9055e
 
 PODFILE CHECKSUM: f9e14b295d106a6fc7b7596fec23693681fd2b75
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
