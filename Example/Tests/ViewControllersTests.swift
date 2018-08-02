@@ -8,8 +8,7 @@
 
 import Nimble
 import Quick
-
-@testable import SpecLeaks
+import SpecLeaks
 
 class ViewControllersTests: QuickSpec {
 
