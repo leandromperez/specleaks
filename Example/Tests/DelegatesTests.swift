@@ -92,15 +92,6 @@ class DelegatesTests: QuickSpec {
 
                 expect(test).to(leak())
             }
-
-            it("must not leak"){
-
-                let test = LeakTest{
-                    return LeakingClient(server: LeakingServer())
-                }
-
-                expect(test).toNot(leak()) //This test is intended to fail, since the object leaks
-            }
         }
     }
 }

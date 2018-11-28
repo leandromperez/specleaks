@@ -73,14 +73,14 @@ class ViewControllersTests: QuickSpec {
                     expect(test).to(leakWhen(action))
                 }
 
-                it("must NOT leak"){
+                it("must leak"){
                     let action : (LeakingViewController) -> Any = { vc in
 
                         vc.cleanLeakedObjects()
                         return vc.createLeakInBlock()
                     }
 
-                    expect(test).toNot(leakWhen(action)) //This test is intended to fail, since the action leaks
+                    expect(test).to(leakWhen(action))
                 }
             }
             describe("dontCreateLeakInBlock") {
