@@ -66,8 +66,5 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-SpecLeaks_iOS/Carthage/Build/
-SpecLeaks_iOS/Carthage/Checkouts/
-
 Carthage/Build/
 Carthage/Checkouts/
