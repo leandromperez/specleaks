@@ -34,6 +34,14 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SpecLeaks'
 ```
+## Example Cocoapods Project
+
+The example project contains a few Unit Tests that will let you understand how to use SpecLeaks. 
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+Command+U to run the sample tests.
+
 
 ## Carthage Installation
 
@@ -44,13 +52,13 @@ github "leandromperez/specleaks"
 ```
 *Note:* don't forget to modify the framework search path from your testing target to include the folder that contains the compiled .framework files
 
-## Example Project
+## Example Carthage Project
 
-The example project contains a few Unit Tests that will let you understand how to use SpecLeaks. 
+There is a folder in the repo *Carthage-Example* that contains a project called *Carthage-Tests* configured to use Carthage.   
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+* Notice the following config entry in Build Settings:
+FRAMEWORK_SEARCH_PATHS = $(SRCROOT)/** $(SRCROOT)/../**
 
-Command+U to run the sample tests.
 
 ## How to Write Tests
 1. Create a Spec
