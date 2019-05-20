@@ -3,7 +3,7 @@
 //  Go24
 //
 //  Created by Leandro Perez on 9/22/17.
-//  Copyright © 2017 Your Trainer Inc. All rights reserved.
+//  Copyright © 2018 Leandro Perez. All rights reserved.
 //
 
 import Foundation
