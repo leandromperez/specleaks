@@ -21,7 +21,7 @@ Create ***Unit Tests for Memory Leaks*** in Swift.
 
 
 ## Compatibility Notes: 
-**Release Version: 0.1.6**
+**Release Version: 0.1.7**
 * Language version: **Swift 5.0**
 * iOS Deployment Target: 10.0
 * Travis CI running XCode version: 10.2

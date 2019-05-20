@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpecLeaks'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.swift_version    = '5.0'
   s.summary          = 'Unit Tests Memory Leaks in Swift. Write readable tests for mem leaks easily with these Quick and Nimble extensions.'
 
