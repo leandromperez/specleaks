@@ -7,7 +7,7 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
-  - SpecLeaks (0.1.4):
+  - SpecLeaks (0.1.5):
     - Nimble
     - Quick
 
@@ -36,8 +36,8 @@ SPEC CHECKSUMS:
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
-  SpecLeaks: 5e18015c72362b522364b1a2ea7aa4aeb51cec11
+  SpecLeaks: 9d2ec4c9e76216912eaf7f69602687a10e21cc94
 
-PODFILE CHECKSUM: 3e10c7b2e316c386188f0b8a184dd143fe70852e
+PODFILE CHECKSUM: e77a8a079dafceb226f5551c2a283c8f35b87f6a
 
 COCOAPODS: 1.6.1
