@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SpecLeaks.svg?style=flat)](http://cocoapods.org/pods/SpecLeaks)
 [![License](https://img.shields.io/cocoapods/l/SpecLeaks.svg?style=flat)](http://cocoapods.org/pods/SpecLeaks)
 [![Platform](https://img.shields.io/cocoapods/p/SpecLeaks.svg?style=flat)](http://cocoapods.org/pods/SpecLeaks)
+[![Build Status](https://travis-ci.org/leandromperez/specleaks.svg?branch=master)](https://travis-ci.org/leandromperez/specleaks)
 
 Create ***Unit Tests for Memory Leaks*** in **Swift**.
 * ***SpecLeaks***  allows you to create tests using Quick and Nimble. 
