@@ -26,7 +26,7 @@ Create ***Unit Tests for Memory Leaks*** in Swift.
 * iOS Deployment Target: 10.0
 * Travis CI running XCode version: 10.2
 
-## Installation
+## Cocoapods Installation
 
 SpecLeaks is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -34,6 +34,15 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SpecLeaks'
 ```
+
+## Carthage Installation
+
+Follow this [guideline](https://github.com/Carthage/Carthage#quick-start) and to your Cartfile:
+
+```ruby
+github "leandromperez/specleaks"
+```
+*Note:* don't forget to modify the framework search path from your testing target to include the folder that contains the compiled .framework files
 
 ## Example Project
 
