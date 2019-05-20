@@ -122,7 +122,7 @@ class SomeOjectTests: QuickSpec {
 ```
 ## Author
 
-leandromperez@gmail.com, leandromperez@gmail.com
+Leandro Perez, https://twitter.com/bataleandro
 
 ## License
 

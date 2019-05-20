@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Podfile">
+   </FileRef>
+   <FileRef
+      location = "group:Podfile.lock">
+   </FileRef>
+   <FileRef
+      location = "group:../Cartfile">
+   </FileRef>
+   <FileRef
+      location = "group:../Cartfile.resolved">
+   </FileRef>
+   <FileRef
       location = "group:SpecLeaks.xcodeproj">
    </FileRef>
    <FileRef
