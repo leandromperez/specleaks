@@ -21,12 +21,12 @@ Create ***Unit Tests for Memory Leaks*** in Swift.
 
 
 ## Compatibility Notes: 
-**Release Version: 0.1.5**
+**Release Version: 0.1.6**
 * Language version: **Swift 5.0**
 * iOS Deployment Target: 10.0
 * Travis CI running XCode version: 10.2
 
-## Installation
+## Cocoapods Installation
 
 SpecLeaks is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -34,14 +34,31 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SpecLeaks'
 ```
-
-## Example Project
+## Example Cocoapods Project
 
 The example project contains a few Unit Tests that will let you understand how to use SpecLeaks. 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 Command+U to run the sample tests.
+
+
+## Carthage Installation
+
+Follow this [guideline](https://github.com/Carthage/Carthage#quick-start) and to your Cartfile:
+
+```ruby
+github "leandromperez/specleaks"
+```
+*Note:* don't forget to modify the framework search path from your testing target to include the folder that contains the compiled .framework files
+
+## Example Carthage Project
+
+There is a folder in the repo *Carthage-Example* that contains a project called *Carthage-Tests* configured to use Carthage.   
+
+* Notice the following config entry in Build Settings:
+FRAMEWORK_SEARCH_PATHS = $(SRCROOT)/** $(SRCROOT)/../**
+
 
 ## How to Write Tests
 1. Create a Spec
