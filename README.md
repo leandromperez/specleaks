@@ -122,8 +122,7 @@ class SomeOjectTests: QuickSpec {
 }
 ```
 ## Author
-
-Leandro Perez, https://twitter.com/bataleandro
+<a href="https://twitter.com/bataleandro"><img src="twitter.png" alt="@bataleandro" width="25" /></a> Leandro Perez 
 
 ## License
 
