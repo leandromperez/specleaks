@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/SpecLeaks.svg?style=flat)](http://cocoapods.org/pods/SpecLeaks)
 [![Build Status](https://travis-ci.org/leandromperez/specleaks.svg?branch=master)](https://travis-ci.org/leandromperez/specleaks)
 
-Create ***Unit Tests for Memory Leaks*** in **Swift**.
+Create ***Unit Tests for Memory Leaks*** in Swift.
 * ***SpecLeaks***  allows you to create tests using Quick and Nimble. 
 * Write readable tests for mem leaks easily with these Quick and Nimble extensions.
 
@@ -19,6 +19,12 @@ Create ***Unit Tests for Memory Leaks*** in **Swift**.
 * Test if a ViewController is leaking when its view is loaded.
 * Test if a particular method is leaking
 
+
+## Compatibility Notes: 
+**Release Version: 0.1.5**
+* Language version: **Swift 5.0**
+* iOS Deployment Target: 10.0
+* Travis CI running XCode version: 10.2
 
 ## Installation
 
