@@ -1,8 +1,8 @@
 xcode_project: Example/SpecLeaks.xcodeproj
 xcode_scheme: SpecLeaks-Example
-xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone X
 
-osx_image: xcode10.1
+osx_image: xcode10.2
 language: objective-c
 # cache: cocoapods
 podfile: Example/Podfile
@@ -12,5 +12,5 @@ before_install:
 script: 
 - xcodebuild -showsdks
 - xcodebuild test -workspace Example/SpecLeaks.xcworkspace -list
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SpecLeaks.xcworkspace -scheme SpecLeaks-Example -sdk iphonesimulator12.1 -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.0' ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SpecLeaks.xcworkspace -scheme SpecLeaks-Example -sdk iphonesimulator12.1 -destination 'platform=iOS Simulator,name=iPhone X,OS=12.0' ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint

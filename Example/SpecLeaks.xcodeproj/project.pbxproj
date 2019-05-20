@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E30E53A33E3EC3F3834C059 /* Pods_SpecLeaks_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D51865F6243AF31AA7C39CF /* Pods_SpecLeaks_Tests.framework */; };
-		58E5D5DC915CB02CD20C775B /* Pods_SpecLeaks_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FA8A8BBB058A03BE7EA0E4 /* Pods_SpecLeaks_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -23,6 +21,8 @@
 		9C2EF6B0206ED5DE00484633 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF6AF206ED5DD00484633 /* Storyboard.swift */; };
 		9C2EF6B1206ED67100484633 /* LeakingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EF68C206E8B6D00484633 /* LeakingViewController.storyboard */; };
 		9C2EF6BF207146B100484633 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF6BD2071464300484633 /* Helpers.swift */; };
+		AE7E5DBF9FAE733000723A41 /* Pods_SpecLeaks_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA812C09DA332267821F4761 /* Pods_SpecLeaks_Tests.framework */; };
+		FBBC139306FCF7074EE909E2 /* Pods_SpecLeaks_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC14B67A3B159392DE9726 /* Pods_SpecLeaks_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,8 @@
 
 /* Begin PBXFileReference section */
 		09FA7FEA47072CAFC2CFD4B5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2D51865F6243AF31AA7C39CF /* Pods_SpecLeaks_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecLeaks_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		218141A999EF8229318A0CAF /* Pods-SpecLeaks_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecLeaks_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SpecLeaks_Tests/Pods-SpecLeaks_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		36D64CE4620EBADE30208785 /* Pods-SpecLeaks_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecLeaks_Example.debug.xcconfig"; path = "Target Support Files/Pods-SpecLeaks_Example/Pods-SpecLeaks_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3BE8795F09E9FE0BF57C24C6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		441134F428E141DCD160B572 /* SpecLeaks.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpecLeaks.podspec; path = ../SpecLeaks.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* SpecLeaks_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecLeaks_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,8 +50,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SpecLeaks_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpecLeaks_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		705754789DF59D762664766B /* Pods-SpecLeaks_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecLeaks_Example.release.xcconfig"; path = "Target Support Files/Pods-SpecLeaks_Example/Pods-SpecLeaks_Example.release.xcconfig"; sourceTree = "<group>"; };
-		985D5A94CC45AF1DA6C44035 /* Pods-SpecLeaks_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecLeaks_Tests.release.xcconfig"; path = "Target Support Files/Pods-SpecLeaks_Tests/Pods-SpecLeaks_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9C2EF689206E8B6C00484633 /* LeakingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeakingViewController.swift; sourceTree = "<group>"; };
 		9C2EF68A206E8B6D00484633 /* ViewControllersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllersTests.swift; sourceTree = "<group>"; };
 		9C2EF68B206E8B6D00484633 /* DelegatesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegatesTests.swift; sourceTree = "<group>"; };
@@ -59,9 +58,10 @@
 		9C2EF690206E8B6D00484633 /* ActionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsTest.swift; sourceTree = "<group>"; };
 		9C2EF6AF206ED5DD00484633 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		9C2EF6BD2071464300484633 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		B2FA8A8BBB058A03BE7EA0E4 /* Pods_SpecLeaks_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecLeaks_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB985CE8C2E0EA34A91581B2 /* Pods-SpecLeaks_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecLeaks_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SpecLeaks_Tests/Pods-SpecLeaks_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FF9A66932CA95C90949C9800 /* Pods-SpecLeaks_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecLeaks_Example.debug.xcconfig"; path = "Target Support Files/Pods-SpecLeaks_Example/Pods-SpecLeaks_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A36290013848F33234A177E9 /* Pods-SpecLeaks_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecLeaks_Tests.release.xcconfig"; path = "Target Support Files/Pods-SpecLeaks_Tests/Pods-SpecLeaks_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C58D8BA3CA3CF52CD8B86B7B /* Pods-SpecLeaks_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecLeaks_Example.release.xcconfig"; path = "Target Support Files/Pods-SpecLeaks_Example/Pods-SpecLeaks_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DA812C09DA332267821F4761 /* Pods_SpecLeaks_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecLeaks_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCC14B67A3B159392DE9726 /* Pods_SpecLeaks_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecLeaks_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58E5D5DC915CB02CD20C775B /* Pods_SpecLeaks_Example.framework in Frameworks */,
+				FBBC139306FCF7074EE909E2 /* Pods_SpecLeaks_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E30E53A33E3EC3F3834C059 /* Pods_SpecLeaks_Tests.framework in Frameworks */,
+				AE7E5DBF9FAE733000723A41 /* Pods_SpecLeaks_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B105A09F95BAE2FD03232E63 /* Pods */,
-				BFF41F0F19153B426B1309AC /* Frameworks */,
+				DA778B138E5FFF994EA3BB83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,19 +172,19 @@
 		B105A09F95BAE2FD03232E63 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FF9A66932CA95C90949C9800 /* Pods-SpecLeaks_Example.debug.xcconfig */,
-				705754789DF59D762664766B /* Pods-SpecLeaks_Example.release.xcconfig */,
-				EB985CE8C2E0EA34A91581B2 /* Pods-SpecLeaks_Tests.debug.xcconfig */,
-				985D5A94CC45AF1DA6C44035 /* Pods-SpecLeaks_Tests.release.xcconfig */,
+				36D64CE4620EBADE30208785 /* Pods-SpecLeaks_Example.debug.xcconfig */,
+				C58D8BA3CA3CF52CD8B86B7B /* Pods-SpecLeaks_Example.release.xcconfig */,
+				218141A999EF8229318A0CAF /* Pods-SpecLeaks_Tests.debug.xcconfig */,
+				A36290013848F33234A177E9 /* Pods-SpecLeaks_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BFF41F0F19153B426B1309AC /* Frameworks */ = {
+		DA778B138E5FFF994EA3BB83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2FA8A8BBB058A03BE7EA0E4 /* Pods_SpecLeaks_Example.framework */,
-				2D51865F6243AF31AA7C39CF /* Pods_SpecLeaks_Tests.framework */,
+				FCCC14B67A3B159392DE9726 /* Pods_SpecLeaks_Example.framework */,
+				DA812C09DA332267821F4761 /* Pods_SpecLeaks_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,11 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SpecLeaks_Example" */;
 			buildPhases = (
-				1D6A75D076C63A24E5969DF9 /* [CP] Check Pods Manifest.lock */,
+				1FF4B1062C73FE0C5EBF9555 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				B38382C454068CBBCB678AEA /* [CP] Embed Pods Frameworks */,
+				7ABA323AD893FEB1685ED184 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,11 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SpecLeaks_Tests" */;
 			buildPhases = (
-				6703CE295FAE467258B1F0DD /* [CP] Check Pods Manifest.lock */,
+				D4B8148815E817270D7DD9A8 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				17012BECE435EB9890AF1E8F /* [CP] Embed Pods Frameworks */,
+				F444AE87C3477CDA189FA403 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,7 +295,77 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17012BECE435EB9890AF1E8F /* [CP] Embed Pods Frameworks */ = {
+		1FF4B1062C73FE0C5EBF9555 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpecLeaks_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ABA323AD893FEB1685ED184 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpecLeaks_Example/Pods-SpecLeaks_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/SpecLeaks/SpecLeaks.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpecLeaks.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpecLeaks_Example/Pods-SpecLeaks_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B8148815E817270D7DD9A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpecLeaks_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F444AE87C3477CDA189FA403 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,76 +395,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpecLeaks_Tests/Pods-SpecLeaks_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1D6A75D076C63A24E5969DF9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpecLeaks_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6703CE295FAE467258B1F0DD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpecLeaks_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B38382C454068CBBCB678AEA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpecLeaks_Example/Pods-SpecLeaks_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/SpecLeaks/SpecLeaks.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpecLeaks.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpecLeaks_Example/Pods-SpecLeaks_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -562,7 +562,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF9A66932CA95C90949C9800 /* Pods-SpecLeaks_Example.debug.xcconfig */;
+			baseConfigurationReference = 36D64CE4620EBADE30208785 /* Pods-SpecLeaks_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpecLeaks/Info.plist;
@@ -577,7 +577,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 705754789DF59D762664766B /* Pods-SpecLeaks_Example.release.xcconfig */;
+			baseConfigurationReference = C58D8BA3CA3CF52CD8B86B7B /* Pods-SpecLeaks_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpecLeaks/Info.plist;
@@ -592,7 +592,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB985CE8C2E0EA34A91581B2 /* Pods-SpecLeaks_Tests.debug.xcconfig */;
+			baseConfigurationReference = 218141A999EF8229318A0CAF /* Pods-SpecLeaks_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -613,7 +613,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 985D5A94CC45AF1DA6C44035 /* Pods-SpecLeaks_Tests.release.xcconfig */;
+			baseConfigurationReference = A36290013848F33234A177E9 /* Pods-SpecLeaks_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
