@@ -8,7 +8,7 @@ language: objective-c
 podfile: Example/Podfile
 before_install:
 - gem install cocoapods # Since Travis is not always on latest version
-- pod install --project-directory=Example
+- pod install --repo-update --project-directory=Example
 script:
 - xcodebuild -showsdks
 - xcodebuild test -workspace Example/SpecLeaks.xcworkspace -list
