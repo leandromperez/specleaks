@@ -68,3 +68,4 @@ fastlane/test_output
 
 Carthage/Build/
 Carthage/Checkouts/
+Carthage-Example/Carthage
