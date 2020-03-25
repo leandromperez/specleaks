@@ -18,6 +18,7 @@
 		79DFEF472289297F00CF65D5 /* Expectation+Leaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFEF402289297F00CF65D5 /* Expectation+Leaks.swift */; };
 		79DFEF4822892A8900CF65D5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DFEF372288B12E00CF65D5 /* Quick.framework */; };
 		79DFEF4922892A8D00CF65D5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DFEF352288B12200CF65D5 /* Nimble.framework */; };
+		8C0FEB06242B5E3A00B72A8A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0FEB05242B5E3A00B72A8A /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		79DFEF3E2289297F00CF65D5 /* LeakTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeakTest.swift; sourceTree = "<group>"; };
 		79DFEF3F2289297F00CF65D5 /* AnalyzeLeakAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeLeakAction.swift; sourceTree = "<group>"; };
 		79DFEF402289297F00CF65D5 /* Expectation+Leaks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+Leaks.swift"; sourceTree = "<group>"; };
+		8C0FEB05242B5E3A00B72A8A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79DFEF4822892A8900CF65D5 /* Quick.framework in Frameworks */,
+				8C0FEB06242B5E3A00B72A8A /* XCTest.framework in Frameworks */,
 				79DFEF4922892A8D00CF65D5 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +112,7 @@
 		79D8370C2288AD7B00A5D942 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C0FEB05242B5E3A00B72A8A /* XCTest.framework */,
 				79DFEF372288B12E00CF65D5 /* Quick.framework */,
 				79DFEF352288B12200CF65D5 /* Nimble.framework */,
 			);
