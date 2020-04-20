@@ -52,6 +52,11 @@ github "leandromperez/specleaks"
 ```
 *Note:* don't forget to modify the framework search path from your testing target to include the folder that contains the compiled .framework files
 
+
+## Swift Package Manager Installation
+
+In Xcode choose File | Swift Packages | Add package dependency and enter https://github.com/leandromperez/specleaks.
+
 ## Example Carthage Project
 
 There is a folder in the repo *Carthage-Example* that contains a project called *Carthage-Tests* configured to use Carthage.   
