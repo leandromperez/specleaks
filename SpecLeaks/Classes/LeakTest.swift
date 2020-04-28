@@ -5,6 +5,7 @@
 //  Created by Leandro Perez on 01/04/2018.
 //
 
+import Foundation
 import Quick
 import Nimble
 
