@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpecLeaks'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.swift_version    = '5.0'
   s.summary          = 'Unit Tests Memory Leaks in Swift. Write readable tests for mem leaks easily with these Quick and Nimble extensions.'
 
@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
   s.source_files = 'SpecLeaks/Classes/**/*'
   
   s.frameworks = 'UIKit', 'XCTest'
-  s.dependency 'Quick'
-  s.dependency 'Nimble'
+  s.dependency 'Quick', '3.0.0'
+  s.dependency 'Nimble', '9.0.0-rc.3'
 end
