@@ -13,7 +13,7 @@ public typealias LeakTestConstructor = () -> AnyObject
 
 extension Expectation where T==LeakTestConstructor {
 
-    public func toNotLeak(timeout: TimeInterval = AsyncDefaults.Timeout, pollInterval: TimeInterval = AsyncDefaults.PollInterval, description: String? = nil, shouldFail: Bool = false) {
+    public func toNotLeak(timeout: DispatchTimeInterval = AsyncDefaults.timeout, pollInterval: DispatchTimeInterval = AsyncDefaults.pollInterval, description: String? = nil, shouldFail: Bool = false) {
         do {
             guard let constructor = try expression.evaluate() else {
                 fail()
@@ -26,7 +26,7 @@ extension Expectation where T==LeakTestConstructor {
     }
 
     public func toLeak() {
-        self.toNotLeak(timeout: AsyncDefaults.Timeout, pollInterval: AsyncDefaults.PollInterval, description: nil, shouldFail: true)
+        self.toNotLeak(timeout: AsyncDefaults.timeout, pollInterval: AsyncDefaults.pollInterval, description: nil, shouldFail: true)
     }
 
     public func toNotLeakWhen<P>( shouldFail: Bool = false, _ action: (P)->Void) where P: AnyObject {

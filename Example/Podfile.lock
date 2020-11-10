@@ -1,15 +1,15 @@
 PODS:
-  - Nimble (8.0.1)
-  - Quick (2.1.0)
-  - RxCocoa (5.0.0):
+  - Nimble (9.0.0-rc.3)
+  - Quick (3.0.0)
+  - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.0):
+  - RxRelay (5.1.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.0)
-  - SpecLeaks (0.1.5):
-    - Nimble
-    - Quick
+  - RxSwift (5.1.1)
+  - SpecLeaks (0.1.9):
+    - Nimble (= 9.0.0-rc.3)
+    - Quick (= 3.0.0)
 
 DEPENDENCIES:
   - Nimble
@@ -19,7 +19,7 @@ DEPENDENCIES:
   - SpecLeaks (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Nimble
     - Quick
     - RxCocoa
@@ -31,13 +31,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
-  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
-  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
-  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
-  SpecLeaks: 9d2ec4c9e76216912eaf7f69602687a10e21cc94
+  Nimble: 1b5fa99320d0d87ed72bb0add38dc696aa77f556
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SpecLeaks: ee49a73e657213d634023e27aa2f59ad63a3d7a6
 
 PODFILE CHECKSUM: e77a8a079dafceb226f5551c2a283c8f35b87f6a
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.3
