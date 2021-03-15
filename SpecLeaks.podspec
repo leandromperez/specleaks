@@ -26,5 +26,5 @@ Pod::Spec.new do |s|
   
   s.frameworks = 'UIKit', 'XCTest'
   s.dependency 'Quick', '3.0.0'
-  s.dependency 'Nimble' ~> '9.0.0'
+  s.dependency 'Nimble', '~> 9.0.0'
 end
