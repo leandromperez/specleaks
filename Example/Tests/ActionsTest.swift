@@ -9,7 +9,7 @@
 import Nimble
 import Quick
 
-@testable import SpecLeaks
+@testable import MyMatchers
 
 class LeakWhenActionCalled {
     

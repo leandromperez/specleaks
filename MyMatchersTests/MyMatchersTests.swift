@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import SpecLeaks
+@testable import MyMatchers
 
-class SpecLeaksTests: XCTestCase {
+class MyMatchersTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

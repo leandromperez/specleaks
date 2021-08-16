@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "SpecLeaks",    
+    name: "MyMatchers",
     platforms: [
       .iOS(.v10)
     ],
     products: [        
-        .library(name: "SpecLeaks", targets: ["SpecLeaks"]),
+        .library(name: "MyMatchers", targets: ["MyMatchers"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Quick/Nimble", from: "9.0.0"),
         .package(url: "https://github.com/Quick/Quick", from: "3.0.0"),
     ],
     targets: [     
-        .target(name: "SpecLeaks", dependencies: ["Quick", "Nimble"], path: "SpecLeaks/Classes/"),
+        .target(name: "MyMatchers", dependencies: ["Quick", "Nimble"], path: "MyMatchers/Classes/"),
     ],
     swiftLanguageVersions: [.v5]
 )
